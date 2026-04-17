@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UMEKITA BAKERY</title>
+    <meta name="description" content="大阪北梅田のリーズナブルな欧風カフェベーカリーです。">
+
+    <!-- レスポンシブにするためのビューポート -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 数字が自動で電話番号のリンクにならないようにする -->
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- ファビコンのリンク -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!--  Webフォントの読み込み：Google Fontsを使用* Noto Sans - DotGothic16 - Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome kitへのリンク-->
+    <script src="https://kit.fontawesome.com/d50d1805d6.js" crossorigin="anonymous"></script>
+
+    <!-- リセットcss -->
+    <!-- <link rel="stylesheet" href="css/ress.css"> -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+    <style>
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- PC用ヘッダー -->
+    <header class="pc">
+        <div class="header-container">
+
+            <!-- メニュー -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="nav-text">HOME</a></li>
+                    <li><a href="about.html" class="nav-text">ABOUT</a></li>
+                    <li><a href="menu.html" class="nav-text">MENU</a></li>
+                    <li><a href="access.html" class="nav-text">ACCESS</a></li>
+                    <li>
+                        <div class="box1"><a href="contact.html">オンライン予約・焼き上がり時間&nbsp;&nbsp;&nbsp;<i
+                                    class="fa-regular fa-alarm-clock"></i></a></div>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- SP用ヘッダー -->
+    <header class="sp">
+        <div class="header-container">
+
+            <!-- メニュー -->
+            <div class="hamberger-menu">
+
+                <div class="menu-content">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="access.html">ACCESS</a></li>
+                        <li><a href="contact.html">オンライン予約・焼き上がり時間</a></li>
+                    </ul>
+                </div>
+                <div class="menu-btn"><span></span><span></span><span></span></div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <div class="js-fadeUp">
+                <h2>焼き上がり時間</h2>
+                <p>その日の天候やご予約状況によって、<br>時間が前後することがございます。</p>
+                <div class="responsive-table">
+                    <table class="table-style">
+                        <tr>
+                            <th>食パン</th>
+                            <td>10:00</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <th>バゲット</th>
+                            <td>10:00</td>
+                            <td>-</td>
+                            <td>12:00</td>
+                        </tr>
+                        <tr>
+                            <th>デニッシュ</th>
+                            <td>-</td>
+                            <td>11:00</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+                    <p>※ ミルクフランスは、9:00以降 随時焼いております。<br>
+                        ※ オープンサンドの焼き上がり時間は日によって前後いたしますので、お問い合わせください。</p>
+                </div>
+            </div>
+
+
+            <div class="js-fadeUp">
+                <h2>オンライン予約・お問い合わせ</h2>
+                <div class="reserve">
+                    <form>
+                        <label for="title">お問い合わせ内容:</label>
+                        <div class="select-style">
+                            <select name="title" id="" required>
+                                <option value="" hidden>選択してください</option>
+                                <option value="ご予約">パンのご予約</option>
+                                <option value="お問い合わせ">お問い合わせ</option>
+                                <option value="ご依頼">取材依頼・イベント等のご依頼 /その他</option>
+                            </select>
+                        </div>
+
+                        <label for="company">貴社名:</label>
+                        <input type="text" id="name" name="company" required>
+
+                        <label for="name">お名前:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="tel">電話番号:</label>
+                        <input type="tel" required>
+
+                        <label for="email">メールアドレス:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="date">ご予約日:</label>
+                        <input type="date" required>
+
+                        <label for="time">お渡し時間:</label>
+                        <select name="time" id="" required>
+                            <option value="" hidden>選択してください</option>
+                            <option value="10:00">10:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="14:00">14:00</option>
+                        </select>
+
+                        <label for="">件名:</label>
+                        <input type="text" required>
+
+                        <label for="message">メッセージ本文:</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="ここに書いてね！"></textarea>
+
+                        <label for="comment">備考:</label>
+                        <textarea id="comment" name="comment" rows="5" required placeholder="ここに書いてね！"></textarea>
+
+                        <button type="submit">送信</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <div class="footer-sns">
+            <a href="" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a> &nbsp;
+            <a href="" target="_blank"><i class="fa-brands fa-x-twitter fa-3x"></i></a>
+        </div>
+        <p class="copyright">
+            <small>&copy;UMEKITA BAKERY 2025</small>
+        </p>
+        <div id="pagetop">
+            <a href="#">↑</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

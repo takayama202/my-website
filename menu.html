@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UMEKITA BAKERY</title>
+    <meta name="description" content="大阪北梅田のリーズナブルな欧風カフェベーカリーです。">
+
+    <!-- レスポンシブにするためのビューポート -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 数字が自動で電話番号のリンクにならないようにする -->
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- ファビコンのリンク -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!--  Webフォントの読み込み：Google Fontsを使用* Noto Sans - DotGothic16 - Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sawarabi+Mincho&family=Zen+Kaku+Gothic+New&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome kitへのリンク-->
+    <script src="https://kit.fontawesome.com/d50d1805d6.js" crossorigin="anonymous"></script>
+
+    <!-- リセットcss -->
+    <link rel="stylesheet" href="css/ress.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- PC用ヘッダー -->
+    <header class="pc">
+        <div class="header-container">
+
+            <!-- メニュー -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="nav-text">HOME</a></li>
+                    <li><a href="about.html" class="nav-text">ABOUT</a></li>
+                    <li><a href="menu.html" class="nav-text">MENU</a></li>
+                    <li><a href="access.html" class="nav-text">ACCESS</a></li>
+                    <li>
+                        <div class="box1"><a href="contact.html">オンライン予約・焼き上がり時間&nbsp;&nbsp;&nbsp;<i
+                                    class="fa-regular fa-alarm-clock"></i></a></div>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- SP用ヘッダー -->
+    <header class="sp">
+        <div class="header-container">
+
+            <!-- メニュー -->
+            <div class="hamberger-menu">
+                <div class="menu-content">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="access.html">ACCESS</a></li>
+                        <li><a href="contact.html">オンライン予約・焼き上がり時間</a></li>
+                    </ul>
+                </div>
+                <div class="menu-btn"><span></span><span></span><span></span></div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <article class="js-fadeUp">
+                <h2>MENU</h2>
+                <p>毎日、食事パンをおよそ10種類、
+                    オープンサンドなどのサンドイッチや焼き菓子もご用意しております。</p>
+                <div id="menu-buttons">
+                    <button value="bread">パン</button>
+                    <button value="sandwich">サンドイッチ</button>
+                    <button value="cakes">焼き菓子</button>
+                    <button value="coffee">コーヒー</button>
+                </div>
+                <div class="menu-item-lists">
+                    <ul id="list">
+                        <li class="bread is-active">
+                            <img src="images/menu1.png" alt="ミルクフランス">
+                            <p>
+                                <strong>ミルクフランス</strong><br>
+                                <strong>&yen;180-</strong><br>
+                                当店の看板メニュー<br>
+                                ミルクの香りが口いっぱいに広がります。
+                            </p>
+                        </li>
+                        <li class="sandwich">
+                            <img src="images/menu2.jpg" alt="オープンサンド">
+                            <p>
+                                <strong>オープンサンド</strong><br>
+                                <strong>&yen;450-</strong><br>
+                                旬の野菜をふんだんに使ったオープンサンド
+                            </p>
+                        </li>
+                        <li class="bread is-active">
+                            <img src="images/menu3.jpg" alt="季節のデニッシュ">
+                            <p>
+                                <strong>季節のデニッシュ</strong><br>
+                                <strong>&yen;300-</strong><br>
+                                旬のくだものを使ったデニッシュ
+                            </p>
+                        </li>
+                        <li class="bread is-active">
+                            <img src="images/menu4.png" alt="食パン">
+                            <p>
+                                <strong>食パン</strong><br>
+                                <strong>&yen;200-</strong><br>
+                                厳選素材で作られた食パン。もちもちです。
+                            </p>
+                        </li>
+                        <li class="cakes">
+                            <img src="images/menu5.png" alt="チョコマフィン">
+                            <p>
+                                <strong>チョコマフィン</strong><br>
+                                <strong>&yen;300-</strong><br>
+                                チョコたっぷり
+                            </p>
+                        </li>
+                        <li class="coffee">
+                            <img src="images/menu7.png" alt="ブレンド">
+                            <p>
+                                <strong>ブレンド</strong><br>
+                                <strong>&yen;250-</strong><br>
+                                こだわりの自家焙煎ブレンド
+                            </p>
+                        </li>
+                        <li class="coffee">
+                            <img src="images/menu8.png" alt="自家焙煎珈琲豆">
+                            <p>
+                                <strong>自家焙煎珈琲豆</strong><br>
+                                <strong>&yen;550-</strong><br>
+                                当店のコーヒーをご自宅でも
+                            </p>
+                        </li>
+                        <li class="cakes">
+                            <img src="images/menu9.png" alt="バナナマフィン">
+                            <p>
+                                <strong>バナナマフィン</strong><br>
+                                <strong>&yen;300-</strong><br>
+                                バナナたっぷり
+                            </p>
+                        </li>
+                        <li class="sandwich">
+                            <img src="images/menu10.png" alt="サンドイッチ">
+                            <p>
+                                <strong>サンドイッチ</strong><br>
+                                <strong>&yen;450-</strong><br>
+                                旬の野菜をふんだんに使ったサンドイッチ
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+        </article>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <div class="footer-sns">
+            <a href="" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a> &nbsp;
+            <a href="" target="_blank"><i class="fa-brands fa-x-twitter fa-3x"></i></a>
+        </div>
+        <p class="copyright">
+            <small>&copy;UMEKITA BAKERY 2025</small>
+        </p>
+        <div id="pagetop">
+            <a href="#">↑</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
